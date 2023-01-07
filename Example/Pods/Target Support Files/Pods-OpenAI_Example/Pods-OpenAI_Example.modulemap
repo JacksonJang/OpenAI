@@ -1,0 +1,6 @@
+framework module Pods_OpenAI_Example {
+  umbrella header "Pods-OpenAI_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

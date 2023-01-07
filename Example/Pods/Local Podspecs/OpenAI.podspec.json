@@ -1,0 +1,22 @@
+{
+  "name": "OpenAI",
+  "version": "0.1.0",
+  "summary": "A short description of OpenAI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/장효원/OpenAI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "장효원": "hyo961015@naver.com"
+  },
+  "source": {
+    "git": "https://github.com/장효원/OpenAI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "OpenAI/Classes/**/*"
+}

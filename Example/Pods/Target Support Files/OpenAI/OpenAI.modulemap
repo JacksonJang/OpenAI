@@ -1,0 +1,6 @@
+framework module OpenAI {
+  umbrella header "OpenAI-umbrella.h"
+
+  export *
+  module * { export * }
+}
