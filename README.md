@@ -90,7 +90,7 @@ OpenAI.makeImage(text: "bird", count: 2, size: ._256x256, completion: { result i
 </td>
 </tr>
 <tr>
-<td style="height: 498px; width: 227px;">
+<td width="227" height="498">
 <img src="Assets/GenerateImage.gif"></img>
 </td>
 </tr>
