@@ -8,11 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* MainViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		CC59AB06F251BAB533E5CA5F /* Pods_OpenAI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8630A2BFC57B2BC773C61576 /* Pods_OpenAI_Example.framework */; };
+		E2539D9C29699272004E17D6 /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539D9B29699272004E17D6 /* OpenAI.swift */; };
+		E2539DA029699B11004E17D6 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539D9F29699B11004E17D6 /* Session.swift */; };
+		E2539DA22969AE03004E17D6 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DA12969AE03004E17D6 /* SessionDelegate.swift */; };
+		E2539DA52969AE24004E17D6 /* OperationQueueExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DA42969AE24004E17D6 /* OperationQueueExt.swift */; };
+		E2539DA82969B123004E17D6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DA72969B123004E17D6 /* HTTPMethod.swift */; };
+		E2539DAC296A54C1004E17D6 /* OpenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DAB296A54C1004E17D6 /* OpenEndpoint.swift */; };
+		E2539DAE296A5B0B004E17D6 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DAD296A5B0B004E17D6 /* ImageSize.swift */; };
+		E2539DB1296A5DFB004E17D6 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DB0296A5DFB004E17D6 /* ImageModel.swift */; };
+		E2539DB3296A6173004E17D6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DB2296A6173004E17D6 /* Errors.swift */; };
+		E2539DB6296A6A67004E17D6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DB5296A6A67004E17D6 /* ImageViewController.swift */; };
+		E2539DBA296A6A8C004E17D6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DB9296A6A8C004E17D6 /* BaseViewController.swift */; };
+		E2550ED6296A7B7900DFE278 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550ED5296A7B7900DFE278 /* Package.swift */; };
+		E2CBE843296A6E830021259A /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBE842296A6E830021259A /* UIApplicationExt.swift */; };
+		E2CBE846296A6EA90021259A /* WaitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBE845296A6EA90021259A /* WaitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +38,27 @@
 		607FACD01AFB9204008FA782 /* OpenAI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenAI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8630A2BFC57B2BC773C61576 /* Pods_OpenAI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EFA04CE3FEA12D7000B15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C02BF92D0F4DD518A0C25F15 /* Pods_OpenAI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenAI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2539D9B29699272004E17D6 /* OpenAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
+		E2539D9F29699B11004E17D6 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		E2539DA12969AE03004E17D6 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		E2539DA42969AE24004E17D6 /* OperationQueueExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueueExt.swift; sourceTree = "<group>"; };
+		E2539DA72969B123004E17D6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E2539DAB296A54C1004E17D6 /* OpenEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEndpoint.swift; sourceTree = "<group>"; };
+		E2539DAD296A5B0B004E17D6 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
+		E2539DB0296A5DFB004E17D6 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		E2539DB2296A6173004E17D6 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		E2539DB5296A6A67004E17D6 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		E2539DB9296A6A8C004E17D6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E2550ED5296A7B7900DFE278 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
+		E2CBE842296A6E830021259A /* UIApplicationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
+		E2CBE845296A6EA90021259A /* WaitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitManager.swift; sourceTree = "<group>"; };
 		E54CB5BB235001F47A6AFBED /* Pods-OpenAI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OpenAI_Tests/Pods-OpenAI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				E2539D922969923B004E17D6 /* Sources */,
 				607FACD21AFB9204008FA782 /* Example for OpenAI */,
 				607FACD11AFB9204008FA782 /* Products */,
 				719EAFC7F561A2CB1A040D1C /* Pods */,
@@ -68,8 +97,7 @@
 		607FACD21AFB9204008FA782 /* Example for OpenAI */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E2539DB7296A6A7A004E17D6 /* Sources */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -90,6 +118,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				E2550ED5296A7B7900DFE278 /* Package.swift */,
 				586C0FB9AC934D8FAA4DF8C8 /* OpenAI.podspec */,
 				32EEC5F77BADC7646C7939CF /* README.md */,
 				AD3EFA04CE3FEA12D7000B15 /* LICENSE */,
@@ -106,6 +135,132 @@
 				483B8CEA2A991DFA39B6FC2B /* Pods-OpenAI_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E2539D922969923B004E17D6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E2539D932969923B004E17D6 /* Classes */,
+				E2539D962969923B004E17D6 /* Assets */,
+			);
+			name = Sources;
+			path = ../Sources;
+			sourceTree = "<group>";
+		};
+		E2539D932969923B004E17D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E2539DA62969B11C004E17D6 /* Core */,
+				E2539DA32969AE1B004E17D6 /* Extensions */,
+				E2539D9E296999B0004E17D6 /* Networking */,
+				E2539D9B29699272004E17D6 /* OpenAI.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E2539D962969923B004E17D6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E2539D9E296999B0004E17D6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E2539DAA296A54B5004E17D6 /* Config */,
+				E2539DAF296A5DA4004E17D6 /* Models */,
+				E2539D9F29699B11004E17D6 /* Session.swift */,
+				E2539DA12969AE03004E17D6 /* SessionDelegate.swift */,
+				E2539DB2296A6173004E17D6 /* Errors.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E2539DA32969AE1B004E17D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2539DA42969AE24004E17D6 /* OperationQueueExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2539DA62969B11C004E17D6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E2539DA72969B123004E17D6 /* HTTPMethod.swift */,
+				E2539DAD296A5B0B004E17D6 /* ImageSize.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E2539DAA296A54B5004E17D6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E2539DAB296A54C1004E17D6 /* OpenEndpoint.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E2539DAF296A5DA4004E17D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2539DB0296A5DFB004E17D6 /* ImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2539DB7296A6A7A004E17D6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E2CBE848296A6EDD0021259A /* Application */,
+				E2539DB8296A6A85004E17D6 /* Base */,
+				E2CBE844296A6EA20021259A /* Utils */,
+				E2CBE841296A6E7A0021259A /* Extensions */,
+				E2CBE849296A6EE90021259A /* Pages */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		E2539DB8296A6A85004E17D6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E2539DB9296A6A8C004E17D6 /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		E2CBE841296A6E7A0021259A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2CBE842296A6E830021259A /* UIApplicationExt.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E2CBE844296A6EA20021259A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2CBE845296A6EA90021259A /* WaitManager.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E2CBE848296A6EDD0021259A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		E2CBE849296A6EE90021259A /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* MainViewController.swift */,
+				E2539DB5296A6A67004E17D6 /* ImageViewController.swift */,
+			);
+			name = Pages;
 			sourceTree = "<group>";
 		};
 		F60F994DE0475D10231A2A26 /* Frameworks */ = {
@@ -235,7 +390,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E2539DBA296A6A8C004E17D6 /* BaseViewController.swift in Sources */,
+				E2539DA029699B11004E17D6 /* Session.swift in Sources */,
+				E2539DB1296A5DFB004E17D6 /* ImageModel.swift in Sources */,
+				E2539DB3296A6173004E17D6 /* Errors.swift in Sources */,
+				E2550ED6296A7B7900DFE278 /* Package.swift in Sources */,
+				E2539DA52969AE24004E17D6 /* OperationQueueExt.swift in Sources */,
+				E2539DA82969B123004E17D6 /* HTTPMethod.swift in Sources */,
+				E2539DA22969AE03004E17D6 /* SessionDelegate.swift in Sources */,
+				E2539DAE296A5B0B004E17D6 /* ImageSize.swift in Sources */,
+				E2CBE843296A6E830021259A /* UIApplicationExt.swift in Sources */,
+				E2539DAC296A54C1004E17D6 /* OpenEndpoint.swift in Sources */,
+				E2CBE846296A6EA90021259A /* WaitManager.swift in Sources */,
+				E2539D9C29699272004E17D6 /* OpenAI.swift in Sources */,
+				607FACD81AFB9204008FA782 /* MainViewController.swift in Sources */,
+				E2539DB6296A6A67004E17D6 /* ImageViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,13 +535,15 @@
 			baseConfigurationReference = 579CE7D83806DC2A21E1397F /* Pods-OpenAI_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = OpenAI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -381,13 +552,15 @@
 			baseConfigurationReference = 2C69FBF0294A3EDA3DC91014 /* Pods-OpenAI_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = OpenAI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
