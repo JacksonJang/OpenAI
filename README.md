@@ -3,10 +3,6 @@
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fadamrushy%2FOpenAISwift%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/adamrushy/OpenAISwift)
 [![](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager/) [![Version](https://img.shields.io/cocoapods/v/OpenAI.svg?style=flat)](https://cocoapods.org/pods/OpenAI) [![License](https://img.shields.io/cocoapods/l/OpenAI.svg?style=flat)](https://cocoapods.org/pods/OpenAI)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Installation
 
 ### CocoaPods
