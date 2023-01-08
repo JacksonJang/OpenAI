@@ -89,31 +89,13 @@ OpenAI.makeImage(text: "bird", count: 2, size: ._256x256, completion: { result i
 
 <table>
 <tr>
-<td width="25%">
-<center>Solid</center>
-</td>
-<td width="25%">
-<center>Gradient</center>
-</td>
-<td width="25%">
-<center>Solid Animated</center>
-</td>
-<td width="25%">
-<center>Gradient Animated</center>
+<td width="100%">
+<center>Generate Image</center>
 </td>
 </tr>
 <tr>
-<td width="25%">
-<img src="Assets/solid.png"></img>
-</td>
-<td width="25%">
-<img src="Assets/gradient.png"></img>
-</td>
-<td width="25%">
-<img src="Assets/solid_animated.gif"></img>
-</td>
-<td width="25%">
-<img src="Assets/gradient_animated.gif"></img>
+<td width="100%">
+<img src="Assets/GenerateImage.gif"></img>
 </td>
 </tr>
 </table>

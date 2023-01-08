@@ -1,6 +1,7 @@
 import UIKit
 
 class ImageViewController: BaseViewController {
+    @IBOutlet var textField: UITextField!
     @IBOutlet var imageView: UIImageView!
     
     override func viewDidLoad() {
@@ -10,7 +11,7 @@ class ImageViewController: BaseViewController {
     
     @IBAction func onTouchGenerate(_ sender: Any) {
         WaitManager.shared.start()
-        OpenAI.makeImage(text: "bird", size: ._256x256, completion: { [weak self] result in
+        OpenAI.makeImage(text: textField.text ?? "bird", size: ._256x256, completion: { [weak self] result in
             switch result {
             case .success(let model):
                 let dic = model.data

@@ -24,7 +24,6 @@
 		E2539DB3296A6173004E17D6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DB2296A6173004E17D6 /* Errors.swift */; };
 		E2539DB6296A6A67004E17D6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DB5296A6A67004E17D6 /* ImageViewController.swift */; };
 		E2539DBA296A6A8C004E17D6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2539DB9296A6A8C004E17D6 /* BaseViewController.swift */; };
-		E2550ED6296A7B7900DFE278 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2550ED5296A7B7900DFE278 /* Package.swift */; };
 		E2CBE843296A6E830021259A /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBE842296A6E830021259A /* UIApplicationExt.swift */; };
 		E2CBE846296A6EA90021259A /* WaitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CBE845296A6EA90021259A /* WaitManager.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +55,6 @@
 		E2539DB2296A6173004E17D6 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		E2539DB5296A6A67004E17D6 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		E2539DB9296A6A8C004E17D6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		E2550ED5296A7B7900DFE278 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		E2CBE842296A6E830021259A /* UIApplicationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
 		E2CBE845296A6EA90021259A /* WaitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitManager.swift; sourceTree = "<group>"; };
 		E54CB5BB235001F47A6AFBED /* Pods-OpenAI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenAI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OpenAI_Tests/Pods-OpenAI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +75,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				E2550ED7296A7D5A00DFE278 /* Assets */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				E2539D922969923B004E17D6 /* Sources */,
 				607FACD21AFB9204008FA782 /* Example for OpenAI */,
@@ -118,7 +117,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				E2550ED5296A7B7900DFE278 /* Package.swift */,
 				586C0FB9AC934D8FAA4DF8C8 /* OpenAI.podspec */,
 				32EEC5F77BADC7646C7939CF /* README.md */,
 				AD3EFA04CE3FEA12D7000B15 /* LICENSE */,
@@ -228,6 +226,13 @@
 				E2539DB9296A6A8C004E17D6 /* BaseViewController.swift */,
 			);
 			name = Base;
+			sourceTree = "<group>";
+		};
+		E2550ED7296A7D5A00DFE278 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		E2CBE841296A6E7A0021259A /* Extensions */ = {
@@ -394,7 +399,6 @@
 				E2539DA029699B11004E17D6 /* Session.swift in Sources */,
 				E2539DB1296A5DFB004E17D6 /* ImageModel.swift in Sources */,
 				E2539DB3296A6173004E17D6 /* Errors.swift in Sources */,
-				E2550ED6296A7B7900DFE278 /* Package.swift in Sources */,
 				E2539DA52969AE24004E17D6 /* OperationQueueExt.swift in Sources */,
 				E2539DA82969B123004E17D6 /* HTTPMethod.swift in Sources */,
 				E2539DA22969AE03004E17D6 /* SessionDelegate.swift in Sources */,
