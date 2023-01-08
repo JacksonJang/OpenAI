@@ -96,6 +96,9 @@ OpenAI.makeImage(text: "bird", count: 2, size: ._256x256, completion: { result i
 </tr>
 </table>
 
+## Contribute
+Contributions for bug fixing or improvements are welcomed. Feel free to submit a pull request. If you have any questions, feature suggestions or bug reports, please send me an email to hyo961015@naver.com.
+
 ## References
 - [Alamofire](https://github.com/Alamofire/Alamofire.git)
 - [Moya](https://github.com/Moya/Moya.git)
