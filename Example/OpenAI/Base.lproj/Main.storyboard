@@ -70,14 +70,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voe-Fa-ZPj">
-                                <rect key="frame" x="114.5" y="511.5" width="146" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Generate Image"/>
-                                <connections>
-                                    <action selector="onTouchGenerate:" destination="iKD-3K-UW5" eventType="touchUpInside" id="hUW-8N-ZcA"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0tJ-Yt-wbi">
                                 <rect key="frame" x="59.5" y="205.5" width="256" height="256"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,21 +79,29 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="bird" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Slo-qL-Ibo">
-                                <rect key="frame" x="36" y="121.5" width="303" height="34"/>
+                                <rect key="frame" x="36" y="128" width="303" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voe-Fa-ZPj">
+                                <rect key="frame" x="114.5" y="162" width="146" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Generate Image"/>
+                                <connections>
+                                    <action selector="onTouchGenerate:" destination="iKD-3K-UW5" eventType="touchUpInside" id="hUW-8N-ZcA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0tJ-Yt-wbi" firstAttribute="centerY" secondItem="d6B-4G-zJE" secondAttribute="centerY" id="3KC-xE-M76"/>
-                            <constraint firstItem="0tJ-Yt-wbi" firstAttribute="top" secondItem="Slo-qL-Ibo" secondAttribute="bottom" constant="50" id="4UC-a0-Ai6"/>
                             <constraint firstItem="Voe-Fa-ZPj" firstAttribute="centerX" secondItem="d6B-4G-zJE" secondAttribute="centerX" id="Bty-G7-IqZ"/>
                             <constraint firstItem="Slo-qL-Ibo" firstAttribute="leading" secondItem="d6B-4G-zJE" secondAttribute="leadingMargin" constant="20" id="DOJ-gZ-ZsW"/>
                             <constraint firstItem="0tJ-Yt-wbi" firstAttribute="centerX" secondItem="d6B-4G-zJE" secondAttribute="centerX" id="dCz-Wn-g07"/>
-                            <constraint firstItem="Voe-Fa-ZPj" firstAttribute="top" secondItem="0tJ-Yt-wbi" secondAttribute="bottom" constant="50" id="fav-HD-q6Y"/>
                             <constraint firstItem="Slo-qL-Ibo" firstAttribute="centerX" secondItem="d6B-4G-zJE" secondAttribute="centerX" id="gup-4c-A4r"/>
+                            <constraint firstItem="Voe-Fa-ZPj" firstAttribute="top" secondItem="Slo-qL-Ibo" secondAttribute="bottom" id="ia7-tY-mW7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Slo-qL-Ibo" secondAttribute="trailing" constant="20" id="p7Z-Jb-7bt"/>
+                            <constraint firstItem="0tJ-Yt-wbi" firstAttribute="top" secondItem="Voe-Fa-ZPj" secondAttribute="bottom" constant="8.5" id="yEM-cY-HFQ"/>
                         </constraints>
                     </view>
                     <connections>

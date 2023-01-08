@@ -7,6 +7,11 @@ class ImageViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupProperties()
+    }
+    
+    private func setupProperties() {
+        textField.delegate = self
     }
     
     @IBAction func onTouchGenerate(_ sender: Any) {
@@ -31,5 +36,12 @@ class ImageViewController: BaseViewController {
                 print("error : \(error.localizedDescription)")
             }
         })
+    }
+}
+
+extension ImageViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
 }
